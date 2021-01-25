@@ -6,3 +6,5 @@ y = 120
 #y = z
 x,y=y,x
 print('x =', x, 'y =', y)
+
+print(' or: %s' % bin())
