@@ -1,4 +1,5 @@
-while True:
+list_ = [1]
+for i in list_:
     try:
         number_1 = int(input("введите 1 число: "))
         number_2 = int(input("введите 2 число: "))
@@ -31,6 +32,6 @@ while True:
                                 "Но если хотите выйти напишите stop: ")
         if restart_or_stop == "stop":
             break
-
+        list_.append(i)
     except ValueError:
         print('вводи числа, ok?')
