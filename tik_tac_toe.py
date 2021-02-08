@@ -20,7 +20,6 @@ def print_board(board):
     print('_____')
 
 move = ''
-# computer = [random.choice(move)]
 player = ['choose your side']
 
 def game():
