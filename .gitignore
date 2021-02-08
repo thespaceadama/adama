@@ -1,2 +1,29 @@
-venv
-/venv
+while True:
+    try:
+        number_1 = int(input("введите 1 число: "))
+        number_2 = int(input("введите 2 число: "))
+        operation = input("Какую операцию провести +, -, /, *, :")
+
+
+        if operation == "+":
+            result = number_1 + number_2
+            print(result)
+        elif operation == "-":
+            result = number_1 - number_2
+            print(result)
+        elif operation == "/":
+            result = number_1 / number_2
+            print(result)
+        elif operation == "*":
+            result = number_1 * number_2
+            print(result)
+        else:
+            print("введен неверный знак операции")
+
+        restart_or_stop = input("Если хотите продолжить калькулятор нажмите Enter,"
+                                "Но если хотите выйти напишите stop: ")
+        if restart_or_stop == "stop":
+            break
+
+    except ValueError:
+        print('вводи числа, ok?')
